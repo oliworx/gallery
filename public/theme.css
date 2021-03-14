@@ -142,3 +142,5 @@ nav.pagination a {
 #zip a {
   color: #3399ff;
 }
+ul#galleries li div.meta {display: none}
+
