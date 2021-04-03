@@ -13,10 +13,8 @@
           nav a {padding-right: 1em; text-decoration: underline;}
       </style>
   </head>
-
   <body>
-
-    <nav> <a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a> </nav>
+    <nav><a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a> </nav>
     <header>
       <a href="index.html">
         <h1>Gallery</h1>
@@ -130,6 +128,15 @@
          <ul class="grid"><li><img src="media/thumbs/2020-08%20Schlei%C3%9Fheim/IMG_20200808_143140.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-08%20Schlei%C3%9Fheim/IMG_20200808_143204.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-08%20Schlei%C3%9Fheim/IMG_20200808_144235.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-08%20Schlei%C3%9Fheim/IMG_20200808_144241.jpg" alt="preview "/></li>     </ul>
        </a>
      </li>
+     <li>
+       <a href="a/2020-10-Deutsches-Museum.html">
+         <h2>2020-10 Deutsches Museum</h2>
+         <div class="meta">
+           14 photos
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2020-10%20Deutsches%20Museum/IMG_20201025_092137.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-10%20Deutsches%20Museum/IMG_20201025_092232.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-10%20Deutsches%20Museum/IMG_20201025_094925.jpg" alt="preview "/></li><li><img src="media/thumbs/2020-10%20Deutsches%20Museum/IMG_20201026_104810.jpg" alt="preview "/></li>     </ul>
+       </a>
+     </li>
     </ul>
     
     <!--
@@ -151,9 +158,7 @@
       Optional footer
     -->
 
-    <!-- jQuery -->
     <script src="public/jquery.min.js"></script>
-    <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery-all.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -165,6 +170,8 @@
           getCaptionFromTitleOrAlt: false,
           loop : false,
           actualSize: false,
+          rotate: false,
+          flipHorizontal: false,
           flipVertical: false,
           download: true,
           counter: true,

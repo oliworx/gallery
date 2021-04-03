@@ -13,10 +13,8 @@
           nav a {padding-right: 1em; text-decoration: underline;}
       </style>
   </head>
-
   <body>
-
-    <nav> <a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a> </nav>
+    <nav><a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a> </nav>
     <header>
       <a href="../index.html">
         <h1>Gallery</h1>
@@ -461,9 +459,7 @@
       Optional footer
     -->
 
-    <!-- jQuery -->
     <script src="../public/jquery.min.js"></script>
-    <!-- LightGallery -->
     <script src="../public/lightgallery/js/lightgallery-all.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -475,6 +471,8 @@
           getCaptionFromTitleOrAlt: false,
           loop : false,
           actualSize: false,
+          rotate: false,
+          flipHorizontal: false,
           flipVertical: false,
           download: true,
           counter: true,
