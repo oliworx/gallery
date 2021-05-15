@@ -14,7 +14,9 @@
       </style>
   </head>
   <body>
-    <nav><a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a> </nav>
+    <nav>
+      <a href="/">Home</a> <a href="/blog">Blog</a> <a href="/links">Links</a> <a href="https://www.kurmis.com/gallery/">Photo gallery</a> <a href="https://www.kurmis.com/password-generator/">Password generator</a>
+    </nav>
     <header>
       <a href="index.html">
         <h1>Gallery</h1>
@@ -33,9 +35,9 @@
        <a href="a/2002-08-Alaska.html">
          <h2>2002-08 Alaska</h2>
          <div class="meta">
-           84 photos
+           85 photos
          </div>
-         <ul class="grid"><li><img src="media/thumbs/2002-08%20Alaska/F1000002.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000003.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000004.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000005.JPG" alt="preview "/></li>     </ul>
+         <ul class="grid"><li><img src="media/thumbs/2002-08%20Alaska/F1000001_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000002.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000003.JPG" alt="preview "/></li><li><img src="media/thumbs/2002-08%20Alaska/F1000004.JPG" alt="preview "/></li>     </ul>
        </a>
      </li>
      <li>
@@ -45,6 +47,15 @@
            5 albums, 95 photos
          </div>
          <ul class="grid"><li><img src="media/thumbs/2003-09%20Karvendelgebirge/2003_09_30/Karwendel_03_0006_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2003-09%20Karvendelgebirge/2003_09_30/Karwendel_03_0007_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2003-09%20Karvendelgebirge/2003_09_30/Karwendel_03_0008_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2003-09%20Karvendelgebirge/2003_09_30/Karwendel_03_0009_arc.JPG" alt="preview "/></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="a/2005-05-Rofangebirge.html">
+         <h2>2005-05 Rofangebirge</h2>
+         <div class="meta">
+           63 photos
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2005-05%20Rofangebirge/Rofan%202005-05_01_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2005-05%20Rofangebirge/Rofan%202005-05_02_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2005-05%20Rofangebirge/Rofan%202005-05_03_arc.JPG" alt="preview "/></li><li><img src="media/thumbs/2005-05%20Rofangebirge/Rofan%202005-05_04_arc.JPG" alt="preview "/></li>     </ul>
        </a>
      </li>
      <li>
@@ -211,13 +222,14 @@
     <!--
       Optional footer
     -->
-
     <script src="public/jquery.min.js"></script>
     <script src="public/lightgallery/js/lightgallery-all.min.js"></script>
     <script>
       $(document).ready(function() {
         $("#media").lightGallery({
           thumbWidth: 80,
+          animateThumb: true,
+          showThumbByDefault: true,
           controls: true,
           share: false,
           hideBarsDelay: 2000,
@@ -231,7 +243,8 @@
           counter: true,
           videojs: false,
           fullScreen: true,
-          zoom: true
+          zoom: true,
+          mode: 'lg-fade'
         });
       });
     </script>
