@@ -5,7 +5,7 @@
       <meta name=description content="gallery Gallery - 2002-08 Alaska">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Gallery - 2002-08 Alaska</title>
-      <link rel="stylesheet" href="../public/lightgallery/css/lightgallery.min.css" />
+      <link type="text/css" rel="stylesheet" href="../public/lightgallery/css/lightgallery-bundle.css" />
       <link rel="stylesheet" href="../public/core.css" />
       <link rel="stylesheet" href="../public/theme.css" />
       <style>
@@ -1244,29 +1244,32 @@
     <!--
       Optional footer
     -->
-    <script src="../public/jquery.min.js"></script>
-    <script src="../public/lightgallery/js/lightgallery-all.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#media").lightGallery({
-          thumbWidth: 80,
-          controls: true,
-          share: false,
-          hideBarsDelay: 2000,
-          getCaptionFromTitleOrAlt: false,
-          loop : false,
-          actualSize: false,
-          rotate: false,
-          flipHorizontal: false,
-          flipVertical: false,
-          download: true,
-          counter: true,
-          videojs: false,
-          fullScreen: true,
-          zoom: true,
-          mode: 'lg-fade'
+    <script src="../public/lightgallery/lightgallery.umd.js"></script>
+    <script src="../public/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="../public/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="../public/lightgallery/plugins/autoplay/lg-autoplay.umd.js"></script>
+    <script src="../public/lightgallery/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('media'), {
+            plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen],
+            thumbWidth: 80,
+            controls: true,
+            share: false,
+            hideBarsDelay: 2000,
+            getCaptionFromTitleOrAlt: false,
+            loop : false,
+            actualSize: false,
+            rotate: false,
+            flipHorizontal: false,
+            flipVertical: false,
+            download: true,
+            counter: true,
+            videojs: false,
+            fullScreen: true,
+            zoom: true,
+            mode: 'lg-fade'
         });
-      });
     </script>
   </body>
 </html>
